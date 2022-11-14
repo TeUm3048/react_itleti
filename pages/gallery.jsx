@@ -37,19 +37,19 @@ export default function GalletyPage() {
     <div className={css.wrapper}>
       <form className={css.form} onSubmit={handleClick}>
 
-        <label className={css.form__item}>
+        <label>
           <span className={css.form__item_name}>
             Название картинки
           </span>
           <input className={css.form__item_input} type="text" value={titleImg} onChange={e => setTitleImg(e.currentTarget.value)} />
         </label>
-        <label className={css.form__item}>
+        <label>
           <span className={css.form__item_name}>
             Ссылка на картинку
           </span>
           <input className={css.form__item_input} type="url" value={thumbnailUrl} onChange={e => setThumbnailUrl(e.currentTarget.value)} />
         </label>
-        <label className={css.form__item}>
+        <label>
           <span className={css.form__item_name}>
             Ссылка на миниатюру картинки
           </span>
@@ -66,7 +66,7 @@ export default function GalletyPage() {
         {content?.slice(pageIndex * 12, (pageIndex + 1) * 12).map((el => (
           <li key={el.id} className={css.gallery__item}>
             <img className={css.gallery__img} src={el.url} alt='' />
-            <span className={css.gallery__title}>{el.title}</span>
+            <span>{el.title}</span>
           </li>
 
         )))}

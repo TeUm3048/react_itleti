@@ -17,8 +17,6 @@
     gap: 8px;
 }
 
-.form__item {}
-
 .form__item_name {
     padding-left: 8px;
 }
@@ -64,4 +62,3 @@
     box-shadow: 2px 4px 8px rgba(59, 38, 0, .6);
 }
 
-.gallery__title {}
