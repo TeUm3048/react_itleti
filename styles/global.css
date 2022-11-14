@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        color: white;
+        background: black;
+    }
+}
